@@ -18,4 +18,7 @@ public class LanguageStudyApiApplication extends SpringBootServletInitializer {
         sa.run(args);
     }
 }
+<<<<<<< HEAD
 1
+=======
+>>>>>>> 2da33c25e2cd3f367dd47b4fffcf58e3cc82eb63
