@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'org.fedorenko'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+// Versions
+ext {
+    springVersion = "2.3.1.RELEASE"
+    swaggerVersion = "2.9.2"
+}
+
+dependencies {
+    compile group: 'io.swagger', name:'swagger-annotations', version:'1.5.13'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: project.ext.springVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: project.ext.springVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: project.ext.springVersion
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: project.ext.swaggerVersion
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: project.ext.swaggerVersion
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
