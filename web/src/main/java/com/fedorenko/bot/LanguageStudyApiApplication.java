@@ -18,3 +18,4 @@ public class LanguageStudyApiApplication extends SpringBootServletInitializer {
         sa.run(args);
     }
 }
+1
